@@ -25,6 +25,6 @@ else if (percentage > 50 && percentage < 60){
     grade = "D";
 }
 else {
-    grade = ("Fail");
+    grade = ("F");
 }
 alert("Your Name: " + nameUser + "\nObtain Marks: " + obtainMarks + "\nPercentage: " + percentage + "\nGrade: " + grade);
