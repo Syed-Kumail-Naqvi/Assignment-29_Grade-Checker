@@ -9,10 +9,15 @@ var obtainMarks = userValue1 + userValue2 + userValue3 +userValue4 + userValue5 
 var percentage = (obtainMarks/totalMarks)* 100;
 var grade;
 
-if (percentage > 90 && percentage < 100) { 
-    grade = "A+";
+if (userValue1, userValue2, userValue3, userValue4, userValue5 > 50) {
+    obtainMarks = "Invalid"
+    percentage = "Invalid"
+};
+
+if (percentage > 100) { 
+    grade = "Invalid";
 }
-else if (percentage > 80 && percentage < 90){
+else if (percentage > 80 && percentage < 100){
     grade = "A";
 }
 else if (percentage > 70 && percentage < 80){
@@ -24,7 +29,7 @@ else if (percentage > 60 && percentage < 70){
 else if (percentage > 50 && percentage < 60){
     grade = "D";
 }
-else {
+else if (percentage > 40 && percentage < 50){
     grade = ("F");
 }
 alert("Your Name: " + nameUser + "\nObtain Marks: " + obtainMarks + "\nPercentage: " + percentage + "\nGrade: " + grade);
